@@ -14,14 +14,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
-            
+           <!--icon  -->
+           <script src="https://kit.fontawesome.com/a30186aa41.js" crossorigin="anonymous"></script>
+
     <!--  coustom color -->
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                : '#121212',
               }
             }
           }
@@ -40,45 +42,177 @@
 </head>
 <body class="font-primary">
     
-    <header>
-                 <nav>
+    <header class=" mx-5 md:mx-12 lg:mx-24">
+     <nav class=" sm:bg-none lg:bg-[#F85559] grid grid-cols-1 lg:grid-cols-3  justify-between mt-12 rounded-full">
+      
+
+       <div class="text-white p-6 font-semibold">
+         <ul class="flex gap-5 ">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li> All Fruits</li>
+         </ul>
+       </div>
+
+      <div class="flex py-5">
+       <img   src="./images/logo.png" alt="" class="h-12 pr-3">
+       <h3 class=" text-white font-bold text-4xl">Fruit Burst</h3>
+      </div>
+
+      <div class="my-6 bg-white w-72 h-8 mr-10  rounded-full"> 
+        <button class=" pr-32 pl-10 py-1 text-[#121212]">Search here   </button>
+                    
+        <i class="fa-solid fa-magnifying-glass"></i> 
+      </div>
+
+    </nav>
+
+     
+
+  <!-- banner section --> 
+   <section class=" mt-10">
+      
+    <div class="carousel w-full">
+      <div   id="slide1" class="carousel-item relative  w-full ">
+    
+        <div class="hero min-h-screen" style="background-image: url('images/banner1.png');">
 
 
 
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 font-medium">We supply highly quality organic products   </p>
+              <button class=" bg-[#F85559] h-10 w-24 text-white font-extrabold">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
 
 
 
+       
+
+
+      
+        <div id="slide2" class="carousel-item relative w-full">
+         
+        <div class="hero min-h-screen" style="background-image: url('images/banner2.png');">
 
 
 
-
-                 </nav>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 font-medium">We supply highly quality organic products   </p>
+              <button class=" bg-[#F85559] h-10 w-24 text-white font-extrabold">Shop Now</button>
+            </div>
+          </div>
+        </div>
+                  
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
 
 
 
+        <div id="slide3" class="carousel-item relative w-full">
+             
+        <div class="hero min-h-screen" style="background-image: url('images/banner3.png');">
+
+
+
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 font-medium">We supply highly quality organic products   </p>
+              <button class=" bg-[#F85559] h-10 w-24 text-white font-extrabold">Shop Now</button>
+            </div>
+          </div>
+        </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full ">
+           
+        <div class="hero min-h-screen" style="background-image: url('images/banner4.png');">
+
+
+
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5 font-medium">We supply highly quality organic products   </p>
+              <button class=" bg-[#F85559] h-10 w-24 text-white font-extrabold">Shop Now</button>
+            </div>
+          </div>
+        </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
      </header>     
 
 
-    <main>
+    <main class=" mx-5 md:mx-12 lg:mx-24" >
+    <!-- deal section -->
+        <section class="grid sm:grid-flow-col justify-between mt-10">
+           <div>
+          <h3 class="text-[#121212] font-extrabold text-5xl">Deal of the day</h3>
+             <p class="font-medium text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old</p>
+           </div>
 
+     <div>
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div class="flex flex-col text-[#121212] ">
+          <span class="countdown font-mono text-5xl">
+            <span class="text-[#121212] font-extrabold " style="--value:15;"></span>
+          </span>
+          days
+        </div> 
+        <div class="flex flex-col text-[#121212] ">
+          <span class="countdown font-mono text-5xl">
+            <span class="text-[#121212] font-extrabold " style="--value:10;"></span>
+          </span>
+          hours
+        </div> 
+        <div class="flex flex-col text-[#121212] ">
+          <span class="countdown font-mono text-5xl">
+            <span class="text-[#121212] font-extrabold "  style="--value:24;"></span>
+          </span>
+          min
+        </div> 
+        <div class="flex flex-col text-[#121212]">
+          <span class="countdown font-mono text-5xl">
+            <span class="text-[#121212] font-extrabold " style="--value:35;"></span>
+          </span>
+          sec
+        </div>
+      </div>   
 
+     </div>
+
+         </section>
 
 
 
@@ -94,7 +228,40 @@
 
     </main>
 
-<footer>
+  <footer class="footer footer-center text-center p-10 mt-10 bg-[#121212] text-white rounded">
+     <div class="flex">
+      <img src="images/logo.png" alt="">
+      <h3 class="font-bold text-4xl">Fruit Burst</h3>
+     </div>
+
+
+    <div class="grid sm:grid-cols-4 sm:p-2  lg:grid-cols-6">
+      <a>Home</a> 
+      <a>About Us</a> 
+      <a>Shop</a> 
+      <a>All Fruits</a>
+        <a>Support</a>
+        <a>My Account</a>
+
+    </div> 
+    <div>
+      <div class=" ">
+<button class="twiter-icon mr-5" onclick="window.open('https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den')"><i class="fa-brands fa-twitter"></i></button>
+<button class="facebook-icon mr-5 " onclick="window.open('https://www.facebook.com')"><i class="fa-brands fa-facebook"></i></button>
+<button class="youtube-icon mr-5 " onclick="window.open('https://www.youtube.com')"> <i class="fa-brands fa-youtube"></i></button>
+<button class="linkdin-icon mr-5 " onclick="window.open('https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2')">
+<i class="fa-brands fa-linkedin"></i></button>
+    <button class="instragram-icon mr-5  " onclick="window.open('https://www.instagram.com/?hl=en')"><i class="fa-brands fa-instagram"></i> </button>
+<button class="apple-icon mr-5" onclick="window.open('https://www.apple.com')"><i class="fa-brands fa-apple"></i>
+</button>
+</div>
+    </div>
+
+
+    <div> 
+      <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    </div>
+  </footer>
 
 
 
@@ -121,9 +288,6 @@
 
 
 
-
-
-</footer>
 
 
 
